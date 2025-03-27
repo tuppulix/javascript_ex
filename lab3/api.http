@@ -44,6 +44,6 @@ Content-Type: application/json
 {
     "title": "ziupera",
     "favorite": 1,
-    "watchdate": "2024-04-01",
-  
+    "watchdate": "2024-04-01"
+    
 }

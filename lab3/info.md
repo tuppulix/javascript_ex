@@ -1,0 +1,56 @@
+### Ottieni tutti i film
+* `GET http://localhost:3000/api/films HTTP/1.1`
+
+### Ottieni un film specifico per ID
+* `GET http://localhost:3000/api/films/4 HTTP/1.1`
+
+### Crea un nuovo film
+* `POST http://localhost:3000/api/films HTTP/1.1`
+* **Content-Type**: `application/json`
+
+```json
+{
+    "title": "Inception",
+    "favorite": 1,
+    "watchdate": "2024-03-21",
+    "rating": 5
+}
+```
+
+### Modifica il valore di "favorite" per un film specifico
+* `PUT http://localhost:3000/api/films/5/favorite HTTP/1.1`
+* **Content-Type**: `application/json`
+
+```json
+{
+    "favorite": 0
+}
+```
+
+### Modifica il valore di "rating" per un film specifico
+* `PUT http://localhost:3000/api/films/1/rating HTTP/1.1`
+* **Content-Type**: `application/json`
+
+```json
+{
+    "rating": -1
+}
+```
+
+### Elimina un film specifico
+* `DELETE http://localhost:3000/api/films_delete/16 HTTP/1.1`
+
+### Filtra i film per una categoria specifica
+* `GET http://localhost:3000/api/films/filter/favorite HTTP/1.1`
+
+### Aggiorna un film specifico (modificando titolo, favorite, watchdate, rating)
+* `POST http://localhost:3000/api/films/update/5 HTTP/1.1`
+* **Content-Type**: `application/json`
+
+```json
+{
+    "title": "ziupera",
+    "favorite": 1,
+    "watchdate": "2024-04-01"
+}
+```
