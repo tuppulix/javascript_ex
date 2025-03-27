@@ -2,7 +2,7 @@
 GET http://localhost:3000/api/films HTTP/1.1
 
 ### Ottieni un film specifico per ID
-GET http://localhost:3000/api/films/1 HTTP/1.1
+GET http://localhost:3000/api/films/4 HTTP/1.1
 
 ### Crea un nuovo film
 POST http://localhost:3000/api/films HTTP/1.1
@@ -28,22 +28,22 @@ PUT http://localhost:3000/api/films/1/rating HTTP/1.1
 Content-Type: application/json
 
 {
-    "rating": 1
+    "rating": -1
 }
 
 ### Elimina un film specifico
-DELETE http://localhost:3000/api/films_delete/2 HTTP/1.1
+DELETE http://localhost:3000/api/films_delete/16 HTTP/1.1
 
 ### Filtra i film per una categoria specifica
 GET http://localhost:3000/api/films/filter/favorite HTTP/1.1
 
 ### Aggiorna un film specifico (modificando titolo, favorite, watchdate, rating)
-POST http://localhost:3000/api/films/update/1 HTTP/1.1
+POST http://localhost:3000/api/films/update/5 HTTP/1.1
 Content-Type: application/json
 
 {
-    "title": "Interstellar",
+    "title": "ziupera",
     "favorite": 1,
     "watchdate": "2024-04-01",
-    "rating": 5
+  
 }
