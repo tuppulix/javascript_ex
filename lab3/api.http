@@ -5,16 +5,45 @@ GET http://localhost:3000/api/films HTTP/1.1
 GET http://localhost:3000/api/films/1 HTTP/1.1
 
 ### Crea un nuovo film
-POST http://localhost:3000/api/films_create/Inception/true/2024-03-21/5 HTTP/1.1
+POST http://localhost:3000/api/films HTTP/1.1
 Content-Type: application/json
+
+{
+    "title": "Inception",
+    "favorite": 1,
+    "watchdate": "2024-03-21",
+    "rating": 5
+}
 
 ### Modifica il valore di "favorite" per un film specifico
-PUT http://localhost:3000/api/films_favorite/2/true HTTP/1.1
+PUT http://localhost:3000/api/films/5/favorite HTTP/1.1
 Content-Type: application/json
 
-### Modifica il valore di "favorite" per un film specifico (rimuovere dai preferiti)
-PUT http://localhost:3000/api/films/1/favorite/false HTTP/1.1
+{
+    "favorite": 0
+}
+
+### Modifica il valore di "rating" per un film specifico
+PUT http://localhost:3000/api/films/1/rating HTTP/1.1
 Content-Type: application/json
-###
-PUT http://localhost:3000/api/films_mark/1/0 HTTP/1.1
+
+{
+    "rating": 2
+}
+
+### Elimina un film specifico
+DELETE http://localhost:3000/api/films_delete/2 HTTP/1.1
+
+### Filtra i film per una categoria specifica
+GET http://localhost:3000/api/films/filter/favorite HTTP/1.1
+
+### Aggiorna un film specifico (modificando titolo, favorite, watchdate, rating)
+POST http://localhost:3000/api/films/update/1 HTTP/1.1
 Content-Type: application/json
+
+{
+    "title": "Interstellar",
+    "favorite": 1,
+    "watchdate": "2024-04-01",
+    "rating": 5
+}
