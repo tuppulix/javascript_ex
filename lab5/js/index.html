@@ -1,0 +1,113 @@
+<html>
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body class="bg-gray-100">
+    <div class="flex">
+        <!-- Sidebar -->
+        <div class="w-1/4 bg-blue-500 text-white h-screen p-4">
+            <div class="flex items-center mb-6">
+                <i class="fas fa-film text-2xl mr-2"></i>
+                <span class="text-xl font-bold">Film Library</span>
+            </div>
+            <ul>
+                <li class="bg-white text-blue-500 p-2 rounded mb-2">All</li>
+                <li class="p-2">Favorite</li>
+                <li class="p-2">Best Rated</li>
+                <li class="p-2">Seen Last Month</li>
+                <li class="p-2">Unseen</li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="w-3/4 p-4">
+            <!-- Search Bar -->
+            <div class="flex justify-between items-center mb-4">
+                <input type="text" placeholder="Search" class="p-2 border rounded w-1/2">
+                <div class="flex items-center">
+                    <i class="fas fa-user-circle text-2xl text-blue-500 mr-4"></i>
+                    <i class="fas fa-plus-circle text-2xl text-blue-500"></i>
+                </div>
+            </div>
+
+            <!-- Table -->
+            <div>
+                <h1 class="text-3xl font-bold mb-4">All</h1>
+                <table class="w-full bg-white rounded shadow">
+                    <thead>
+                        <tr class="border-b">
+                            <th class="p-2 text-left">Title</th>
+                            <th class="p-2 text-left">Favorite</th>
+                            <th class="p-2 text-left">Last seen</th>
+                            <th class="p-2 text-left">Rating</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b">
+                            <td class="p-2 text-red-500">Pulp Fiction</td>
+                            <td class="p-2 text-center"><input type="checkbox" checked></td>
+                            <td class="p-2">March 10, 2024</td>
+                            <td class="p-2">
+                                <i class="fas fa-star text-black"></i>
+                                <i class="fas fa-star text-black"></i>
+                                <i class="fas fa-star text-black"></i>
+                                <i class="fas fa-star text-black"></i>
+                                <i class="fas fa-star text-black"></i>
+                            </td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="p-2 text-red-500">21 Grams</td>
+                            <td class="p-2 text-center"><input type="checkbox" checked></td>
+                            <td class="p-2">March 17, 2024</td>
+                            <td class="p-2">
+                                <i class="fas fa-star text-black"></i>
+                                <i class="fas fa-star text-black"></i>
+                                <i class="fas fa-star text-black"></i>
+                                <i class="fas fa-star text-black"></i>
+                                <i class="fas fa-star text-gray-300"></i>
+                            </td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="p-2">Star Wars</td>
+                            <td class="p-2 text-center"><input type="checkbox"></td>
+                            <td class="p-2"></td>
+                            <td class="p-2">
+                                <i class="fas fa-star text-gray-300"></i>
+                                <i class="fas fa-star text-gray-300"></i>
+                                <i class="fas fa-star text-gray-300"></i>
+                                <i class="fas fa-star text-gray-300"></i>
+                                <i class="fas fa-star text-gray-300"></i>
+                            </td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="p-2">Matrix</td>
+                            <td class="p-2 text-center"><input type="checkbox"></td>
+                            <td class="p-2"></td>
+                            <td class="p-2">
+                                <i class="fas fa-star text-gray-300"></i>
+                                <i class="fas fa-star text-gray-300"></i>
+                                <i class="fas fa-star text-gray-300"></i>
+                                <i class="fas fa-star text-gray-300"></i>
+                                <i class="fas fa-star text-gray-300"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="p-2">Shrek</td>
+                            <td class="p-2 text-center"><input type="checkbox"></td>
+                            <td class="p-2">March 21, 2024</td>
+                            <td class="p-2">
+                                <i class="fas fa-star text-black"></i>
+                                <i class="fas fa-star text-black"></i>
+                                <i class="fas fa-star text-gray-300"></i>
+                                <i class="fas fa-star text-gray-300"></i>
+                                <i class="fas fa-star text-gray-300"></i>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
