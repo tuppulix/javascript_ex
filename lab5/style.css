@@ -1,6 +1,10 @@
-.navbar-brand {
-    color: white;
+
+/* Class for favorite movies */
+.favorite {
+    color: red;
 }
-h5 {
-    background-color: blue;
+
+/* Class for empty stars to become blue on mouse over, just for testing */
+.bi-star:hover {
+    color: #00d0ff;
 }
